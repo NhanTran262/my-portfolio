@@ -1,93 +1,171 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Ubuntu", sans-serif;
-  color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+    color: #fff;
 }
 
 body {
-  background-color: black;
+    background-color: black;
 }
+
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 50px;
-  height: 15vh;
-  box-shadow: 0px 2px 10px 0px #fff;
-  -webkit-box-shadow: 0px 2px 10px 0px #fff;
-  -moz-box-shadow: 0px 2px 10px 0px #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 10vh;
+    box-shadow: 0 2px 10px 0 #ff4500;
+    -webkit-box-shadow: 0 2px 10px 0 #ff4500;
+    -moz-box-shadow: 0 2px 10px 0 #ff4500;
 }
 
 .navbar h1 {
-  color: #ff4500;
+    color: #ff4500;
 }
 
 .navbar ul li {
-  list-style: none;
+    list-style: none;
 }
 
 .navbar ul {
-  display: flex;
-  gap: 2rem;
+    display: flex;
+    gap: 2rem;
 }
 
 .navbar ul li a {
-  text-decoration: none;
-  font-size: 1.2rem;
-  transition: color 0.3 ease;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
 }
 
 .navbar ul li:hover a {
-  color: #ff4500;
+    color: #ff4500;
 }
 
 .hire-btn {
-  background-color: #ff4500;
-  padding: 10px 40px;
-  border: none;
-  border-radius: 0.5rem;
-  color: black;
-  font-size: 1.2rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    background-color: #ff4500;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 0.5rem;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .hire-btn:hover {
-  background-color: #ffdeb8;
+    background-color: #ffdeb8;
 }
 
 .main-title {
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .main-title span {
-  text-decoration: underline;
-  color: #ff4500;
-  font-size: 2rem;
+    text-decoration: underline;
+    color: #ff4500;
+    font-size: 2rem;
 }
 
 .main-title p.title {
-  font-size: 3rem;
-  font-weight: bold;
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 .main-title p.sub-title {
-  font-size: 1.2rem;
-  color: #ccc;
+    font-size: 1.2rem;
+    color: #ccc;
 }
 
 .main-title img {
-  background-color: black;
-  width: 200px;
-  border: 1px solid black;
-  border-radius: 50%;
+    background-color: black;
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 50%;
 }
+
+.guarantee {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+    padding: 0 300px;
+}
+
+.guarantee .guarantee-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #292b2e;
+    border-radius: 0.7rem;
+    border: 0.1rem solid transparent;
+    height: 100px;
+    width: 100%;
+    padding: 1.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.guarantee .guarantee-item:hover {
+    border-color: #ff4500;
+}
+
+.guarantee .guarantee-item .guarantee-icon i {
+    color: black;
+}
+
+.guarantee .guarantee-item .guarantee-icon {
+    width: 2.8rem;
+    height: 2.8rem;
+    background: #fff;
+    font-size: 2rem;
+    border: 0.1rem solid transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.guarantee .guarantee-item:hover .guarantee-icon {
+    background-color: #ff4500;
+}
+
+.guarantee .guarantee-item > i {
+    color: #fff;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+.guarantee .guarantee-item:hover > i {
+    color: #ff4500;
+}
+
+.guarantee .guarantee-item .guarantee-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.guarantee .guarantee-item .guarantee-info h2 {
+    color: #ff4500;
+}
+
+.guarantee .guarantee-item .guarantee-info p {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+
