@@ -18,6 +18,7 @@ body {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 li {
@@ -97,6 +98,9 @@ nav button.contact-btn:hover {
     border-color: #ffdeb8;
     background-color: #ffdeb8;
     color: #ff4500;
+    box-shadow: 0 0 10px 5px #ff4500;
+    -webkit-box-shadow: 0 0 10px 5px #ff4500;
+    -moz-box-shadow: 0 0 10px 5px #ff4500;
 }
 
 main .main-title {
@@ -114,30 +118,59 @@ main .main-title .title-info {
     gap: 10rem;
 }
 
-main .main-title .hello,
+main .main-title .title-info .hello,
 main .about .about-me {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-main .main-title .hello span {
+main .main-title .title-info .hello span {
     color: #ff4500;
     font-size: 2rem;
     text-shadow: 0 0 20px #ff4500;
 }
 
-main .main-title .hello p.title {
+main .main-title .title-info .hello p.title {
     font-size: 3rem;
     font-weight: bold;
 }
 
-main .main-title .hello p.sub-title {
+main .main-title .title-info .hello p.sub-title {
     font-size: 1.2rem;
     color: #ccc;
 }
 
-main .main-title .hello button.cv-btn {
+main .main-title .title-info .hello .social {
+    display: flex;
+    gap: 1rem;
+}
+
+main .main-title .title-info .hello .social .social-item a {
+    width: 2rem;
+    height: 2rem;
+    background: #ccc;
+    border: 0.1rem solid transparent;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    font-size: 1.5rem;
+}
+
+main .main-title .title-info .hello .social .social-item a > i {
+    color: black;
+}
+
+main .main-title .title-info .hello .social .social-item a:hover {
+    background: #ff4500;
+    box-shadow: 0 0 10px 5px #ff4500;
+    -webkit-box-shadow: 0 0 10px 5px #ff4500;
+    -moz-box-shadow: 0 0 10px 5px #ff4500;
+}
+
+main .main-title .title-info .hello a.cv-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -153,22 +186,22 @@ main .main-title .hello button.cv-btn {
     transition: all 0.3s ease;
 }
 
-main .main-title .hello button.cv-btn > i {
+main .main-title .title-info .hello a.cv-btn > i {
     color: black;
     font-size: 1.25rem;
 }
 
-main .main-title .hello button.cv-btn:hover > i {
+main .main-title .title-info .hello a.cv-btn:hover > i {
     color: #ff4500;
 }
 
-main .main-title .hello button.cv-btn:hover {
+main .main-title .title-info .hello a.cv-btn:hover {
     border-color: #ffdeb8;
     background-color: #ffdeb8;
     color: #ff4500;
 }
 
-main .main-title .avatar {
+main .main-title .title-info .avatar {
     position: relative;
     width: 20rem;
     height: 20rem;
@@ -177,7 +210,7 @@ main .main-title .avatar {
     overflow: hidden;
 }
 
-main .main-title .avatar-content {
+main .main-title .title-info .avatar .avatar-content {
     position: absolute;
     inset: 5px;
     z-index: 3;
@@ -188,7 +221,7 @@ main .main-title .avatar-content {
     -moz-box-shadow: 0 0 10px 3px #ff4500;
 }
 
-main .main-title .avatar-content img {
+main .main-title .title-info .avatar .avatar-content img {
     top: 0;
     left: 0;
     position: absolute;
@@ -196,17 +229,7 @@ main .main-title .avatar-content img {
     height: 100%;
 }
 
-main .about .avatar img {
-    width: 20rem;
-    height: 20rem;
-    border: 0.1rem solid transparent;
-    border-radius: 50%;
-    box-shadow: 0 0 10px 3px #ff4500;
-    -webkit-box-shadow: 0 0 10px 3px #ff4500;
-    -moz-box-shadow: 0 0 10px 3px #ff4500;
-}
-
-main .main-title .avatar:before {
+main .main-title .title-info .avatar:before {
     content: '';
     position: absolute;
     inset: -10px 100px;
@@ -215,22 +238,13 @@ main .main-title .avatar:before {
     transition: 1s;
 }
 
-main .main-title .avatar:after {
+main .main-title .title-info .avatar:after {
     content: '';
     position: absolute;
     inset: 6px;
     background: black;
     border-radius: 50%;
     z-index: 1;
-}
-
-@keyframes border-animation {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
 }
 
 main .guarantee {
@@ -313,6 +327,16 @@ main .about {
     padding: 0 10vw;
 }
 
+main .about .avatar img {
+    width: 20rem;
+    height: 20rem;
+    border: 0.1rem solid transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 3px #ff4500;
+    -webkit-box-shadow: 0 0 10px 3px #ff4500;
+    -moz-box-shadow: 0 0 10px 3px #ff4500;
+}
+
 main .about .about-me .about-btn a.my-github-btn {
     display: flex;
     align-items: center;
@@ -335,7 +359,6 @@ main .about .about-me p {
 
 main .about .about-me span {
     color: #ff4500;
-    text-shadow: 0 0 20px #ff4500;
 }
 
 main .about .about-me .about-btn a.my-github-btn i {
