@@ -10,122 +10,206 @@
 
 body {
     background-color: black;
+    max-width: 100%;
+    box-shadow: 0 0 10px 0 #ff4500;
+    -webkit-box-shadow: 0 0 10px 0 #ff4500;
+    -moz-box-shadow: 0 0 10px 0 #ff4500;
 }
 
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    padding: 0 50px;
-    height: 10vh;
-    box-shadow: 0 2px 10px 0 #ff4500;
-    -webkit-box-shadow: 0 2px 10px 0 #ff4500;
-    -moz-box-shadow: 0 2px 10px 0 #ff4500;
+a {
+    text-decoration: none;
 }
 
-.navbar h1 {
-    color: #ff4500;
-}
-
-.navbar ul li {
+li {
     list-style: none;
 }
 
-.navbar ul {
-    display: flex;
-    gap: 2rem;
+button {
+    cursor: pointer;
 }
 
-.navbar ul li a {
-    text-decoration: none;
+img {
+    object-fit: cover;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 42vw;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 3.5vh;
+}
+
+nav .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background: black;
+    border: 0.1rem solid transparent;
+    border-radius: 5rem;
+    padding: 2vw;
+    height: 5vh;
+    box-shadow: 0 0 10px 0 #ff4500;
+    -webkit-box-shadow: 0 0 10px 0 #ff4500;
+    -moz-box-shadow: 0 0 10px 0 #ff4500;
+}
+
+nav .navbar h1 {
+    font-size: 2rem;
+    color: #ff4500;
+    white-space: nowrap;
+}
+
+nav .navbar a.nav-link {
     font-size: 1.2rem;
     transition: color 0.3s ease;
 }
 
-.navbar ul li:hover a {
+nav .navbar a.nav-link:hover {
+    color: #ff4500;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav .navbar a.active {
+    color: #ff4500;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav .navbar button.contact-btn {
+    background-color: #ff4500;
+    width: 10rem;
+    padding: 0.2rem;
+    border: 0.1rem solid transparent;
+    border-radius: 2rem;
+    color: black;
+    font-size: 1.25rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+nav button.contact-btn:hover {
+    border-color: #ffdeb8;
+    background-color: #ffdeb8;
     color: #ff4500;
 }
 
-.hire-btn {
-    background-color: #ff4500;
-    padding: 10px 40px;
-    border: none;
-    border-radius: 0.5rem;
-    color: black;
-    font-size: 1.2rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.hire-btn:hover {
-    background-color: #ffdeb8;
-}
-
-.main-title {
-    height: 80vh;
+main .main-title {
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+main .main-title .title-info {
+    display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10rem;
+}
+
+main .main-title .hello,
+main .about .about-me {
+    display: flex;
+    flex-direction: column;
     gap: 1rem;
 }
 
-.main-title span {
-    text-decoration: underline;
+main .main-title .hello span {
     color: #ff4500;
     font-size: 2rem;
+    text-shadow: 0 0 20px #ff4500;
 }
 
-.main-title p.title {
+main .main-title .hello p.title {
     font-size: 3rem;
     font-weight: bold;
 }
 
-.main-title p.sub-title {
+main .main-title .hello p.sub-title {
     font-size: 1.2rem;
     color: #ccc;
 }
 
-.main-title img {
-    background-color: black;
-    width: 400px;
-    border: 1px solid black;
-    border-radius: 50%;
+main .main-title .hello button.cv-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: #ff4500;
+    width: 12rem;
+    padding: 0.2rem;
+    border: 0.1rem solid transparent;
+    border-radius: 2rem;
+    color: black;
+    font-size: 1.25rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
 
-.guarantee {
+main .main-title .hello button.cv-btn > i {
+    color: black;
+    font-size: 1.25rem;
+}
+
+main .main-title .hello button.cv-btn:hover > i {
+    color: #ff4500;
+}
+
+main .main-title .hello button.cv-btn:hover {
+    border-color: #ffdeb8;
+    background-color: #ffdeb8;
+    color: #ff4500;
+}
+
+main .main-title .avatar img,
+main .about .avatar img {
+    background-color: black;
+    width: 20rem;
+    height: 20rem;
+    border: 0.1rem solid transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 3px #ff4500;
+    -webkit-box-shadow: 0 0 10px 3px #ff4500;
+    -moz-box-shadow: 0 0 10px 3px #ff4500;
+}
+
+main .guarantee {
     display: flex;
     flex-wrap: nowrap;
     gap: 1.5rem;
-    padding: 0 300px;
+    padding: 0 10vw;
 }
 
-.guarantee .guarantee-item {
+main .guarantee .guarantee-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #292b2e;
     border-radius: 0.7rem;
-    border: 0.1rem solid transparent;
-    height: 100px;
+    border: 0.2rem solid transparent;
+    height: 6.25rem;
     width: 100%;
     padding: 1.8rem;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.guarantee .guarantee-item:hover {
+main .guarantee .guarantee-item:hover {
     border-color: #ff4500;
 }
 
-.guarantee .guarantee-item .guarantee-icon i {
+main .guarantee .guarantee-item .guarantee-icon i {
     color: black;
 }
 
-.guarantee .guarantee-item .guarantee-icon {
+main .guarantee .guarantee-item .guarantee-icon {
     width: 2.8rem;
     height: 2.8rem;
     background: #fff;
@@ -138,36 +222,105 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.guarantee .guarantee-item:hover .guarantee-icon {
+main .guarantee .guarantee-item:hover .guarantee-icon {
     background-color: #ff4500;
 }
 
-.guarantee .guarantee-item > i {
-    color: #fff;
+main .guarantee .guarantee-item > i {
     font-size: 2rem;
     transition: color 0.3s ease;
 }
 
-.guarantee .guarantee-item:hover > i {
+main .guarantee .guarantee-item:hover > i {
     color: #ff4500;
 }
 
-.guarantee .guarantee-item .guarantee-info {
+main .guarantee .guarantee-item .guarantee-info {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.2rem;
 }
 
-.guarantee .guarantee-item .guarantee-info h2 {
+main .guarantee .guarantee-item .guarantee-info h2 {
     color: #ff4500;
 }
 
-.guarantee .guarantee-item .guarantee-info p {
-    color: #fff;
+main .guarantee .guarantee-item .guarantee-info p {
     font-size: 1.2rem;
     font-weight: bold;
 }
+
+main .about {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    padding: 0 10vw;
+}
+
+main .about .about-me .about-btn a.my-github-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+    background-color: #ff4500;
+    width: 10rem;
+    padding: 0.5rem;
+    border: 0.1rem solid transparent;
+    border-radius: 0.5rem;
+    color: black;
+    font-size: 1.25rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+main .about .about-me p {
+    color: #ccc;
+}
+
+main .about .about-me span {
+    color: #ff4500;
+    text-shadow: 0 0 20px #ff4500;
+}
+
+main .about .about-me .about-btn a.my-github-btn i {
+    color: black;
+}
+
+main .about-me .about-btn a.my-github-btn:hover i {
+    color: #ff4500;
+}
+
+main .about .about-me .about-btn a.my-github-btn:hover {
+    border-color: #ffdeb8;
+    background-color: #ffdeb8;
+    color: #ff4500;
+}
+
+main .about .about-me .about-btn {
+    display: flex;
+    gap: 1rem;
+}
+
+main .about .about-me .hire-btn {
+    width: 10rem;
+    background: transparent;
+    padding: 0.5rem;
+    border: 0.1rem solid #ff4500;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ff4500;
+    transition: all 0.3s ease;
+}
+
+main .about .about-me .hire-btn:hover {
+    border-color: #ffdeb8;
+    color: #ffdeb8;
+}
+
 
 
 

@@ -1,83 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="/assets/style.css"/>
+    <link rel="stylesheet" href="/assets/responsive.css"/>
     <title>My Portfolio</title>
 </head>
 <body>
-<div class="navbar">
-    <h1>FullStackDev.</h1>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">About</a></li>
-    </ul>
-    <button class="hire-btn">Hire Me</button>
-</div>
-<div class="main-title">
-    <h2>Hi, I Am&nbsp;<span>NhanTran</span>&nbsp;👋</h2>
-    <p class="title">Full Stack Web Developer.</p>
-    <p class="sub-title">
-        I'm Design And Code In A Simple Way And I Love What I Doing!
-    </p>
-    <img src="/images/logo.png" alt="logo"/>
-</div>
-<div class="guarantee">
-    <div class="guarantee-item">
-        <div class="guarantee-icon">
-            <i class='bx bx-check-shield'></i>
-        </div>
-        <div class="guarantee-info">
-            <h2>+1</h2>
-            <p>Years Of Experience</p>
-        </div>
-        <i class='bx bx-chevron-down'></i>
+<nav>
+    <div class="navbar">
+        <h1>Nhan Tran</h1>
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skill" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <button class="contact-btn">
+            Contact Me
+        </button>
     </div>
-    <div class="guarantee-item">
-        <div class="guarantee-icon">
-            <i class='bx bx-check-shield'></i>
+</nav>
+<main>
+
+    <section id="home">
+        <div class="main-title">
+            <div class="title-info">
+                <div class="hello">
+                    <h2>Hi, I Am&nbsp;<span>Nhan Tran</span>&nbsp;👋</h2>
+                    <p class="title">Full Stack Web Developer.</p>
+                    <p class="sub-title">
+                        I'm Design And Code In A Simple Way And I Love What I Doing!
+                    </p>
+                    <button class="cv-btn">
+                        Download CV
+                        <i class='bx bx-download'></i>
+                    </button>
+                </div>
+                <div class="avatar">
+                    <img src="/images/avatar.png" alt="logo"/>
+                </div>
+            </div>
+            <div class="guarantee">
+                <div class="guarantee-item">
+                    <div class="guarantee-icon">
+                        <i class='bx bx-check-shield'></i>
+                    </div>
+                    <div class="guarantee-info">
+                        <h2>+1</h2>
+                        <p>Years Of Experience</p>
+                    </div>
+                    <i class='bx bx-chevron-down'></i>
+                </div>
+                <div class="guarantee-item">
+                    <div class="guarantee-icon">
+                        <i class='bx bx-code-alt'></i>
+                    </div>
+                    <div class="guarantee-info">
+                        <h2>+10</h2>
+                        <p>Completed Projects</p>
+                    </div>
+                    <i class='bx bx-chevron-down'></i>
+                </div>
+                <div class="guarantee-item">
+                    <div class="guarantee-icon">
+                        <i class='bx bx-happy-alt'></i>
+                    </div>
+                    <div class="guarantee-info">
+                        <h2>+5</h2>
+                        <p>Happy Clients</p>
+                    </div>
+                    <i class='bx bx-chevron-down'></i>
+                </div>
+            </div>
         </div>
-        <div class="guarantee-info">
-            <h2>+10</h2>
-            <p>Completed Projects</p>
+    </section>
+
+    <section id="about">
+        <div class="about">
+            <div class="avatar">
+                <img src="/images/about-photo.png" alt="Avatar"/>
+            </div>
+            <div class="about-me">
+                <h2>About Me</h2>
+                <p>
+                    Passionate about building modern, optimized, and highly scalable web applications. Proficient in
+                    both frontend and backend development, always striving to create seamless user experiences
+                    combined with a robust backend system.
+                </p>
+                <p>
+                    Experienced in working with <span>React.js, Next.js</span> on the frontend, and Java Spring Boot on
+                    the
+                    backend. Skilled
+                    in managing data efficiently with <span>PostgreSQL</span> and <span>MySQL</span>, ensuring
+                    performance
+                    optimization and security.
+                </p>
+                <p>
+                    Enjoys problem-solving, teamwork, and staying up to date with the latest technology trends.
+                    Whether it's designing intuitive user interfaces, optimizing database queries, or deploying
+                    systems on the cloud, always ready to take on new challenges.
+                </p>
+                <p>Constantly seeking collaboration opportunities to create outstanding products!</p>
+                <div class="about-btn">
+                    <button class="hire-btn">Hire Me Now</button>
+                    <a class="my-github-btn" href="https://github.com/NhanTran262" target="_blank">
+                        <i class='bx bxl-github'></i>
+                        My Github
+                    </a>
+                </div>
+            </div>
         </div>
-        <i class='bx bx-chevron-down'></i>
-    </div>
-    <div class="guarantee-item">
-        <div class="guarantee-icon">
-            <i class='bx bx-check-shield'></i>
-        </div>
-        <div class="guarantee-info">
-            <h2>+5</h2>
-            <p>Happy Clients</p>
-        </div>
-        <i class='bx bx-chevron-down'></i>
-    </div>
-</div>
-<div class="about">
-    <div class="about-left">
-        <im/>
-    </div>
-    <div class="about-right">
-        <h2>About Me</h2>
-        <p> With 1 year of experience participating
-            in various projects of different scales, I
-            have accumulated valuable knowledge
-            that can be applied to the company's
-            product development process.</p>
-    </div>
-</div>
-<div class="skill">
-    <div class="skill-left"></div>
-    <div class="skill-right"></div>
-</div>
-<div class="service"></div>
-<div class="project"></div>
+    </section>
+
+    <section id="skill">
+    </section>
+</main>
 </body>
 <script src="/scripts/main.js"></script>
 </html>

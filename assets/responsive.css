@@ -1,0 +1,59 @@
+@media screen and (max-width: 1200px) {
+    nav {
+        padding-top: 5.5vh;
+    }
+
+    nav .navbar a.my-project-btn {
+        padding: 0.1rem;
+    }
+
+    main .main-title {
+        gap: 5rem;
+    }
+
+    main .main-title .main-title-left img {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    main .guarantee {
+        padding: 0 3vw;
+    }
+
+    main .guarantee .guarantee-item {
+        height: 5.25rem;
+        padding: 1rem;
+    }
+
+    main .guarantee .guarantee-item .guarantee-icon {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.5rem;
+    }
+
+    main .guarantee .guarantee-item > i {
+        font-size: 1.5rem;
+    }
+
+    main .guarantee .guarantee-item .guarantee-info h2 {
+        font-size: 1.2rem;
+    }
+
+    main .guarantee .guarantee-item .guarantee-info p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main .main-title {
+        gap: 3rem;
+    }
+    main .main-title .main-title-left img {
+        width: 18rem;
+        height: 18rem;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    
+}
