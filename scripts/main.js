@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (targetSection) {
                 isScrolling = true;
                 window.scrollTo({
-                    top: targetSection.offsetTop - 20,
+                    top: targetSection.offsetTop - 50,
                     behavior: 'smooth',
                 })
                 updateActiveLink(targetId)
