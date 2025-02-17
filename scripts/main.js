@@ -3,11 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.nav-link');
     const homeLink = document.querySelector('a[href="#home"]');
 
-    document.addEventListener('DOMContentLoaded', () => {
-        if (window.location.hash === "" || window.location.hash === "#home") {
-            updateActiveLink("#home")
-        }
-    })
+    if (window.location.hash === "" || window.location.hash === "#home") {
+        updateActiveLink("home")
+    }
 
     navLinks.forEach(link => {
         link.addEventListener('click', (event) => {
