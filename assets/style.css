@@ -50,7 +50,7 @@ nav .navbar {
     justify-content: center;
     gap: 2rem;
     background: black;
-    border: 0.1rem solid transparent;
+    border: 1px solid transparent;
     border-radius: 5rem;
     padding: 2vw;
     height: 5vh;
@@ -86,7 +86,7 @@ nav .navbar button.contact-btn {
     background-color: #ff4500;
     width: 10rem;
     padding: 0.2rem;
-    border: 0.1rem solid transparent;
+    border: 1px solid transparent;
     border-radius: 2rem;
     color: black;
     font-size: 1.25rem;
@@ -116,6 +116,7 @@ main .main-title .title-info {
     align-items: center;
     justify-content: center;
     gap: 10rem;
+
 }
 
 main .main-title .title-info .hello,
@@ -125,15 +126,35 @@ main .about .about-me {
     gap: 1rem;
 }
 
-main .main-title .title-info .hello span {
-    color: #ff4500;
+main .main-title .title-info .hello h1 {
     font-size: 2rem;
+}
+
+main .main-title .title-info .hello span.name {
+    color: #ff4500;
+    font-size: 3rem;
     text-shadow: 0 0 20px #ff4500;
 }
 
-main .main-title .title-info .hello p.title {
+main .main-title .title-info .hello .title-container {
+    display: inline-block;
+    position: relative;
+}
+
+main .main-title .title-info .hello .title-container .outline-title {
     font-size: 3rem;
     font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 1px #ffdeb8;
+}
+
+main .main-title .title-info .hello .title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ff4500;
 }
 
 main .main-title .title-info .hello p.sub-title {
@@ -150,7 +171,7 @@ main .main-title .title-info .hello .social .social-item a {
     width: 2rem;
     height: 2rem;
     background: #ccc;
-    border: 0.1rem solid transparent;
+    border: 1px solid transparent;
     border-radius: 0.5rem;
     display: flex;
     justify-content: center;
@@ -165,9 +186,9 @@ main .main-title .title-info .hello .social .social-item a > i {
 
 main .main-title .title-info .hello .social .social-item a:hover {
     background: #ff4500;
-    box-shadow: 0 0 10px 5px #ff4500;
-    -webkit-box-shadow: 0 0 10px 5px #ff4500;
-    -moz-box-shadow: 0 0 10px 5px #ff4500;
+    box-shadow: 0 0 10px 5px #ffdeb8;
+    -webkit-box-shadow: 0 0 10px 5px #ffdeb8;
+    -moz-box-shadow: 0 0 10px 5px #ffdeb8;
 }
 
 main .main-title .title-info .hello a.cv-btn {
@@ -178,7 +199,7 @@ main .main-title .title-info .hello a.cv-btn {
     background-color: #ff4500;
     width: 12rem;
     padding: 0.2rem;
-    border: 0.1rem solid transparent;
+    border: 1px solid transparent;
     border-radius: 2rem;
     color: black;
     font-size: 1.25rem;
@@ -203,16 +224,19 @@ main .main-title .title-info .hello a.cv-btn:hover {
 
 main .main-title .title-info .avatar {
     position: relative;
-    width: 20rem;
-    height: 20rem;
+    width: 400px;
+    height: 400px;
     background: transparent;
     border-radius: 50%;
     overflow: hidden;
+    opacity: 0;
+    animation: zoomIn 3s forwards;
+    animation-delay: 0.5s;
 }
 
 main .main-title .title-info .avatar .avatar-content {
     position: absolute;
-    inset: 5px;
+    inset: 20px;
     z-index: 3;
     border-radius: 50%;
     overflow: hidden;
@@ -232,9 +256,9 @@ main .main-title .title-info .avatar .avatar-content img {
 main .main-title .title-info .avatar:before {
     content: '';
     position: absolute;
-    inset: -10px 100px;
+    inset: -10px 80px;
     background: #ff4500;
-    animation: border-animation 3s infinite;
+    animation: border-animation 3s linear infinite;
     transition: 1s;
 }
 
@@ -281,7 +305,7 @@ main .guarantee .guarantee-item .guarantee-icon {
     height: 2.8rem;
     background: #fff;
     font-size: 2rem;
-    border: 0.1rem solid transparent;
+    border: 1px solid transparent;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -328,9 +352,9 @@ main .about {
 }
 
 main .about .avatar img {
-    width: 20rem;
-    height: 20rem;
-    border: 0.1rem solid transparent;
+    width: 400px;
+    height: 400px;
+    border: 1px solid transparent;
     border-radius: 50%;
     box-shadow: 0 0 10px 3px #ff4500;
     -webkit-box-shadow: 0 0 10px 3px #ff4500;
@@ -345,7 +369,7 @@ main .about .about-me .about-btn a.my-github-btn {
     background-color: #ff4500;
     width: 10rem;
     padding: 0.5rem;
-    border: 0.1rem solid transparent;
+    border: 1px solid transparent;
     border-radius: 0.5rem;
     color: black;
     font-size: 1.25rem;
@@ -384,7 +408,7 @@ main .about .about-me .hire-btn {
     width: 10rem;
     background: transparent;
     padding: 0.5rem;
-    border: 0.1rem solid #ff4500;
+    border: 1px solid #ff4500;
     border-radius: 0.5rem;
     font-size: 1.2rem;
     font-weight: 600;

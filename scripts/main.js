@@ -52,3 +52,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 })
 
+let typed = new Typed(".title", {
+    strings: ["Full Stack Web Developer."],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true,
+    showCursor: false,
+});
+
